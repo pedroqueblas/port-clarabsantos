@@ -23,16 +23,16 @@ export default function Home() {
     <>
       <section id="sobre" className="reveal grid items-center gap-10 py-6 sm:py-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-5">
-          <span className="inline-flex items-center rounded-full border border-[#2b0f44] bg-[#1b0a2b] px-3 py-1 text-xs font-semibold text-[#d8b4fe]">
+          <span className="reveal reveal-delay-1 inline-flex items-center rounded-full border border-[#2b0f44] bg-[#1b0a2b] px-3 py-1 text-xs font-semibold text-[#d8b4fe]">
             Desenvolvedora Java Backend Junior
           </span>
-          <h1 className="text-3xl font-semibold leading-tight text-violet-50 sm:text-4xl lg:text-5xl">
+          <h1 className="reveal reveal-delay-2 text-3xl font-semibold leading-tight text-violet-50 sm:text-4xl lg:text-5xl">
             Construo APIs robustas e escaláveis em Java
           </h1>
-          <p className="text-base text-violet-200 sm:text-lg">
+          <p className="reveal reveal-delay-3 text-base text-violet-200 sm:text-lg">
             Desenvolvedora Java Backend Junior com experiência em desenvolvimento de aplicações web utilizando Spring Boot, Hibernate e RESTful APIs. Conhecimento em bancos de dados SQL e práticas de versionamento com Git. Habilidade em trabalhar em equipe, solucionar problemas técnicos e entregar soluções de qualidade.
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="reveal reveal-delay-4 flex flex-wrap gap-2">
             <span className="rounded-full border border-[#2b0f44] bg-[#0b0b0b] px-3 py-1 text-xs text-violet-200">Java</span>
             <span className="rounded-full border border-[#2b0f44] bg-[#0b0b0b] px-3 py-1 text-xs text-violet-200">Spring Boot</span>
             <span className="rounded-full border border-[#2b0f44] bg-[#0b0b0b] px-3 py-1 text-xs text-violet-200">Docker</span>
@@ -40,7 +40,7 @@ export default function Home() {
             <span className="rounded-full border border-[#2b0f44] bg-[#0b0b0b] px-3 py-1 text-xs text-violet-200">API REST</span>
             <span className="rounded-full border border-[#2b0f44] bg-[#0b0b0b] px-3 py-1 text-xs text-violet-200">SQL</span>
           </div>
-          <div className="flex flex-wrap gap-3 pt-2">
+          <div className="reveal reveal-delay-5 flex flex-wrap gap-3 pt-2">
             <a className="inline-flex items-center gap-2 rounded-lg bg-[#9400D3] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(148,0,211,0.25)] transition hover:bg-[#7b00ad]" href="https://www.linkedin.com/in/clara-santos02/" target="_blank" rel="noreferrer">
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM4 9h2v12H4zM9 9h2v1.6h.03C11.46 9.9 12.67 9 14.4 9 18.04 9 19 11.3 19 15v6h-2v-5.2c0-2-.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V21H9V9z"/>
@@ -55,7 +55,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="relative mx-auto flex w-[200px] items-center justify-center lg:mx-0">
+        <div className="reveal reveal-delay-2 relative mx-auto flex w-[200px] items-center justify-center lg:mx-0">
           <img
             className="h-[200px] w-[200px] rounded-2xl object-cover shadow-[0_12px_30px_rgba(148,0,211,0.25)] float"
             src="/perfil.jpg"
@@ -69,46 +69,46 @@ export default function Home() {
 
       <section id="skills" className="reveal mt-10 border-t border-[#1c0b2a] pt-10">
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-violet-50 sm:text-2xl">Skills</h2>
-          <p className="text-violet-200">Ferramentas e tecnologias que utilizo no dia a dia.</p>
+          <h2 className="reveal reveal-delay-1 text-xl font-semibold text-violet-50 sm:text-2xl">Skills</h2>
+          <p className="reveal reveal-delay-2 text-violet-200">Ferramentas e tecnologias que utilizo no dia a dia.</p>
         </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-1 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">☕ Java</div>
             <div className="mt-1 text-xs text-violet-200">Collections, Streams, JPA</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
               <div className="h-full rounded-full bg-gradient-to-r from-[#9400D3] to-[#c084fc]" style={{ width: "85%" }} />
             </div>
           </div>
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-2 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">🌱 Spring Boot</div>
             <div className="mt-1 text-xs text-violet-200">REST, Security, Data JPA</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
               <div className="h-full rounded-full bg-gradient-to-r from-[#9400D3] to-[#c084fc]" style={{ width: "80%" }} />
             </div>
           </div>
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-3 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">🐳 Docker</div>
             <div className="mt-1 text-xs text-violet-200">Containerização e Compose</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
               <div className="h-full rounded-full bg-gradient-to-r from-[#9400D3] to-[#c084fc]" style={{ width: "70%" }} />
             </div>
           </div>
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-4 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">🌿 Git</div>
             <div className="mt-1 text-xs text-violet-200">Branches, PRs e Git Flow</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
               <div className="h-full rounded-full bg-gradient-to-r from-[#9400D3] to-[#c084fc]" style={{ width: "82%" }} />
             </div>
           </div>
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-5 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">🔗 API REST</div>
             <div className="mt-1 text-xs text-violet-200">Boas práticas, versionamento, DTOs</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
               <div className="h-full rounded-full bg-gradient-to-r from-[#9400D3] to-[#c084fc]" style={{ width: "84%" }} />
             </div>
           </div>
-          <div className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <div className="reveal reveal-delay-6 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="text-sm font-semibold text-violet-50">🗄️ SQL</div>
             <div className="mt-1 text-xs text-violet-200">Modelagem, consultas, índices</div>
             <div className="mt-3 h-2 w-full rounded-full bg-[#1b0a2b]">
@@ -120,11 +120,11 @@ export default function Home() {
 
       <section id="projetos" className="reveal mt-10 border-t border-[#1c0b2a] pt-10">
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-violet-50 sm:text-2xl">Projetos</h2>
-          <p className="text-violet-200">Alguns exemplos de projetos e desafios práticos.</p>
+          <h2 className="reveal reveal-delay-1 text-xl font-semibold text-violet-50 sm:text-2xl">Projetos</h2>
+          <p className="reveal reveal-delay-2 text-violet-200">Alguns exemplos de projetos e desafios práticos.</p>
         </div>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <article className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <article className="reveal reveal-delay-1 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h3 className="text-base font-semibold text-violet-50">API de Catálogo</h3>
@@ -142,7 +142,7 @@ export default function Home() {
               Ver repositório
             </a>
           </article>
-          <article className="reveal rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-[#9400D3] hover:shadow-[0_12px_40px_rgba(148,0,211,0.2)]">
+          <article className="reveal reveal-delay-2 glow-hover rounded-2xl border border-[#2b0f44] bg-[#0b0b0b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h3 className="text-base font-semibold text-violet-50">Serviço de Pedidos</h3>

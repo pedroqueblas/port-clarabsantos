@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className="min-h-screen bg-black text-violet-100 antialiased">
+      <body className="min-h-screen bg-black bg-ambient text-violet-100 antialiased">
         <header className="sticky top-0 z-10 border-b border-[#1c0b2a] bg-black/90 backdrop-blur">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
             <div className="flex items-center gap-2 text-sm font-semibold tracking-wide text-violet-100">
