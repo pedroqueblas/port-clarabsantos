@@ -64,50 +64,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projetos" className="reveal mt-10 border-t border-[#1e293b] pt-10">
-        <div className="space-y-2">
-          <h2 className="reveal reveal-delay-1 text-xl font-semibold text-white sm:text-2xl">Projetos</h2>
-          <p className="reveal reveal-delay-2 text-[#93c5fd]">Alguns exemplos de projetos e desafios práticos.</p>
-        </div>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <article className="reveal reveal-delay-1 glow-hover rounded-2xl border border-[#1e40af] bg-[#1e293b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <h3 className="text-base font-semibold text-white">API de Catálogo</h3>
-                <p className="mt-1 text-sm text-[#93c5fd]">Spring Boot, JPA, PostgreSQL</p>
-              </div>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs font-medium text-[#93c5fd]">Backend</span>
-            </div>
-            <p className="mt-3 text-sm text-[#93c5fd]">Gerenciamento de produtos com autenticação, testes automatizados e documentação de API.</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">JWT</span>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">Testes</span>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">Swagger</span>
-            </div>
-            <a className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#93c5fd] transition hover:text-[#bfdbfe]" href="#" aria-disabled="true">
-              Ver repositório
-            </a>
-          </article>
-          <article className="reveal reveal-delay-2 glow-hover rounded-2xl border border-[#1e40af] bg-[#1e293b] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <h3 className="text-base font-semibold text-white">Serviço de Pedidos</h3>
-                <p className="mt-1 text-sm text-[#93c5fd]">Spring Boot, Docker, RabbitMQ</p>
-              </div>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs font-medium text-[#93c5fd]">Mensageria</span>
-            </div>
-            <p className="mt-3 text-sm text-[#93c5fd]">Processamento assíncrono, integração com filas e observabilidade com logs estruturados.</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">Queue</span>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">Docker Compose</span>
-              <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-2 py-0.5 text-xs text-[#93c5fd]">Logs</span>
-            </div>
-            <a className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#93c5fd] transition hover:text-[#bfdbfe]" href="#" aria-disabled="true">
-              Ver repositório
-            </a>
-          </article>
-        </div>
-      </section>
 
       <section
         id="mentorias"
@@ -132,7 +88,7 @@ export default function Home() {
             <div className="mentoria-pill-grid">
               <div className="mentoria-pill">
                 <span className="mentoria-pill-dot" />
-                Foco em desenvolvedores backend Java em transição ou aceleração de carreira
+                Foco em desenvolvedores backend em transição ou aceleração de carreira
               </div>
               <div className="mentoria-pill">
                 <span className="mentoria-pill-dot" />
