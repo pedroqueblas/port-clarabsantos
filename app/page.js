@@ -43,6 +43,26 @@ export default function Home() {
             Principais tecnologias e ferramentas que utilizo no desenvolvimento backend.
           </p>
         </div>
+        <div className="mt-6 skills-strip">
+          <div className="skills-glass-card reveal reveal-delay-3">
+            <div className="skills-marquee">
+              <div className="skills-marquee-inner">
+                {skills.map((skill, index) => (
+                  <div key={`${skill.label}-a-${index}`} className="skills-icon">
+                    <span className="skills-icon-emoji">{skill.icon}</span>
+                    <span className="skills-icon-label">{skill.label}</span>
+                  </div>
+                ))}
+                {skills.map((skill, index) => (
+                  <div key={`${skill.label}-b-${index}`} className="skills-icon">
+                    <span className="skills-icon-emoji">{skill.icon}</span>
+                    <span className="skills-icon-label">{skill.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="projetos" className="reveal mt-10 border-t border-[#1e293b] pt-10">
         <div className="space-y-2">
@@ -89,119 +109,93 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="mentorias" className="reveal mt-10 border-t border-[#1e293b] pt-10">
-        <div className="space-y-2 text-center">
-          <h2 className="reveal reveal-delay-1 text-xl font-semibold text-white sm:text-2xl">Mentorias</h2>
-          <p className="reveal reveal-delay-2 text-[#93c5fd] max-w-2xl mx-auto">
-            Invista no seu desenvolvimento profissional e acelere sua carreira em tecnologia com orientação personalizada
-          </p>
-        </div>
+      <section
+        id="mentorias"
+        className="reveal mt-16 border-t border-[#1e293b] pt-12 mentoria-section"
+      >
+        <div className="mentoria-layout">
+          <div className="mentoria-copy">
+            <div className="mentoria-hero-tag">Mentoria individual para acelerar sua carreira</div>
+            <h2 className="mentoria-main-title">
+              Transforme sua experiência em tecnologia em uma carreira de alto impacto
+            </h2>
+            <p className="mentoria-lead">
+              Em poucas sessões, você sai com um{" "}
+              <span className="mentoria-highlight">plano claro de evolução</span>, feedbacks
+              sinceros sobre seu momento atual e{" "}
+              <span className="mentoria-highlight-strong">
+                estratégias práticas para conquistar as próximas oportunidades
+              </span>
+              .
+            </p>
 
-        <div className="reveal reveal-delay-3 mt-8 grid gap-8 md:grid-cols-2">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-white">Por que buscar mentoria?</h3>
-              <p className="text-[#93c5fd]">
-                A área de tecnologia está em constante evolução e ter um mentor experiente pode fazer toda a diferença 
-                no seu crescimento profissional. Através da mentoria, você recebe orientação prática, insights valiosos 
-                e direcionamento personalizado para alcançar seus objetivos mais rapidamente.
-              </p>
+            <div className="mentoria-pill-grid">
+              <div className="mentoria-pill">
+                <span className="mentoria-pill-dot" />
+                Foco em desenvolvedores backend Java em transição ou aceleração de carreira
+              </div>
+              <div className="mentoria-pill">
+                <span className="mentoria-pill-dot" />
+                Encontros online, objetivos definidos e ações concretas a cada sessão
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-white">Vantagens da mentoria em TI</h3>
-              <ul className="space-y-2 text-[#93c5fd]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Aceleração do aprendizado técnico</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Orientação sobre carreira e mercado</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Resolução de desafios reais do dia a dia</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Networking e conexões profissionais</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Preparação para entrevistas técnicas</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#2563eb]">✓</span>
-                  <span>Desenvolvimento de soft skills essenciais</span>
-                </li>
+            <div className="mentoria-benefits">
+              <h3 className="mentoria-subtitle">Em cada mentoria você vai:</h3>
+              <ul className="mentoria-benefits-list">
+                <li>Mapear seus próximos passos na carreira com clareza e confiança</li>
+                <li>Receber feedbacks técnicos e comportamentais alinhados ao mercado atual</li>
+                <li>Organizar estudos, projetos e portfólio para se posicionar melhor</li>
+                <li>Praticar entrevistas, storytelling profissional e abordagem com recrutadores</li>
               </ul>
-            </div>
-
-            <div className="reveal reveal-delay-5 pt-4">
-              <a 
-                 className="inline-flex items-center gap-2 rounded-lg bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(37,99,235,0.25)] transition hover:bg-[#1d4ed8]" 
-                 href="https://www.instagram.com/devclarasantos/" 
-                 target="_blank" 
-                 rel="noreferrer"
-               >
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-                </svg>
-                Entre em contato pelo Instagram
-              </a>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold text-white">O que dizem nossos mentorandos</h3>
-            
-            <div className="space-y-4">
-              <div className="glow-hover rounded-2xl border border-[#1e40af] bg-[#1e293b] p-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-r from-[#2563eb] to-[#93c5fd] flex items-center justify-center">
-                    <span className="text-white font-semibold text-sm">AM</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Ana Maria</h4>
-                    <p className="text-sm text-[#93c5fd]">Desenvolvedora Backend</p>
-                  </div>
-                </div>
-                <p className="mt-3 text-[#93c5fd] text-sm">
-                  "A mentoria foi transformadora! Recebi orientações precisas que me ajudaram a conseguir minha primeira 
-                  vaga como desenvolvedora Java. As dicas sobre entrevistas técnicas foram especialmente valiosas."
-                </p>
-              </div>
+          <div className="mentoria-plan reveal reveal-delay-3">
+            <div className="mentoria-plan-header">
+              <span className="mentoria-badge">Vagas limitadas</span>
+              <h3>Mentoria 1:1 com Clara</h3>
+              <p>
+                Sessões personalizadas, focadas nos seus objetivos atuais e próximos desafios na
+                área de tecnologia.
+              </p>
+            </div>
 
-              <div className="glow-hover rounded-2xl border border-[#1e40af] bg-[#1e293b] p-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-r from-[#2563eb] to-[#93c5fd] flex items-center justify-center">
-                    <span className="text-white font-semibold text-sm">CP</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Carlos Pedro</h4>
-                    <p className="text-sm text-[#93c5fd]">Engenheiro de Software</p>
-                  </div>
-                </div>
-                <p className="mt-3 text-[#93c5fd] text-sm">
-                  "Excelente mentoria! As sessões práticas com Spring Boot e os code reviews me fizeram evoluir 
-                  rapidamente. Recomendo para quem quer sair do básico e se tornar um desenvolvedor senior."
-                </p>
-              </div>
+            <div className="mentoria-plan-body">
+              <ul>
+                <li>Encontro individual ao vivo (online)</li>
+                <li>Roteiro personalizado após cada sessão</li>
+                <li>Análise de currículo, LinkedIn ou portfólio</li>
+                <li>Espaço para tirar dúvidas técnicas e de carreira</li>
+              </ul>
 
-              <div className="glow-hover rounded-2xl border border-[#1e40af] bg-[#1e293b] p-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-r from-[#2563eb] to-[#93c5fd] flex items-center justify-center">
-                    <span className="text-white font-semibold text-sm">JS</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Juliana Silva</h4>
-                    <p className="text-sm text-[#93c5fd]">Arquiteta de Software</p>
-                  </div>
+              <div className="mentoria-plan-cta">
+                <div className="mentoria-plan-note">
+                  <span className="mentoria-spot">Melhor momento</span>
+                  <p>Para quem quer dar o próximo passo com segurança, sem caminhar sozinho.</p>
                 </div>
-                <p className="mt-3 text-[#93c5fd] text-sm">
-                  "A mentoria me ajudou a fazer a transição para arquitetura de software. As discussões sobre 
-                  padrões de projeto e boas práticas foram fundamentais para meu crescimento profissional."
+
+                <a
+                  className="mentoria-cta-button group"
+                  href="https://www.instagram.com/devclarasantos/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="mentoria-cta-glow" />
+                  <span>Quero conversar sobre mentoria</span>
+                  <svg
+                    className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M13.172 12 8.222 7.05l1.414-1.414L16 11l-6.364 5.364-1.414-1.414z" />
+                  </svg>
+                </a>
+
+                <p className="mentoria-disclaimer">
+                  Resposta rápida e humana. Sem compromisso – alinhamos expectativas antes de
+                  qualquer agendamento.
                 </p>
               </div>
             </div>
