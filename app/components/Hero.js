@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
         <div className="relative">
           <img
-            src="/perfil.jpg"
+            src="/perfil.jpeg"
             alt="Foto de perfil"
             className="avatar relative z-10 h-64 w-64 rounded-2xl object-cover"
           />
@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
       <div className="space-y-5 order-2 lg:order-1">
         <span className="reveal reveal-delay-1 inline-flex items-center rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs font-semibold text-[#93c5fd]">
-          Desenvolvedora Backend
+          Desenvolvedora Back-End
         </span>
         <h1 className="reveal reveal-delay-2 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
           Construo APIs robustas e escaláveis em Java

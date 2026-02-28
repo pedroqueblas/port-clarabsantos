@@ -133,7 +133,7 @@ export default function Home() {
 
                 <a
                   className="mentoria-cta-button group"
-                  href="https://www.instagram.com/devclarasantos/"
+                  href="https://wa.link/pw5acd"
                   target="_blank"
                   rel="noreferrer"
                 >
