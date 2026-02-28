@@ -1,9 +1,6 @@
 export default function Hero() {
   return (
     <section id="sobre" className="reveal grid items-center gap-10 py-6 sm:py-10 lg:grid-cols-[1.1fr_0.9fr]">
-<<<<<<< HEAD
-      <div className="space-y-5">
-=======
       <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
         <div className="relative">
           <img
@@ -15,7 +12,6 @@ export default function Hero() {
         </div>
       </div>
       <div className="space-y-5 order-2 lg:order-1">
->>>>>>> 4af76d1 (Atualização do projeto: melhorias no layout / novos componentes)
         <span className="reveal reveal-delay-1 inline-flex items-center rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs font-semibold text-[#93c5fd]">
           Desenvolvedora Java Backend
         </span>
@@ -33,25 +29,7 @@ export default function Hero() {
           <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs text-[#93c5fd]">API REST</span>
           <span className="rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs text-[#93c5fd]">SQL</span>
         </div>
-<<<<<<< HEAD
-
-      </div>
-      <div className="relative flex justify-center lg:justify-end">
-        <div className="relative">
-          <img
-            src="/perfil.jpg"
-            alt="Foto de perfil"
-            className="avatar relative z-10 h-64 w-64 rounded-2xl object-cover"
-          />
-          <div className="avatar-ring"></div>
-        </div>
       </div>
     </section>
   );
 }
-=======
-      </div>
-    </section>
-  );
-}
->>>>>>> 4af76d1 (Atualização do projeto: melhorias no layout / novos componentes)
