@@ -99,6 +99,7 @@ body::before {
   position: relative;
   overflow: hidden;
   padding-inline: 2.5rem;
+  mask-image: linear-gradient(to right, transparent 0, black 48px, black calc(100% - 48px), transparent 100%);
 }
 
 .skills-marquee-inner {
@@ -107,7 +108,9 @@ body::before {
   align-items: center;
   white-space: nowrap;
   will-change: transform;
+  width: max-content;
   animation: skills-marquee 22s linear infinite;
+  animation-delay: 300ms;
 }
 
 .skills-icon {

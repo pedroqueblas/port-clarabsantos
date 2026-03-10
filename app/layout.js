@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/perfil.jpeg" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className="min-h-screen bg-black text-white antialiased">
         <Header />

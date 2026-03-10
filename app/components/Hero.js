@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="sobre" className="reveal grid items-center gap-10 py-6 sm:py-10 lg:grid-cols-[1.1fr_0.9fr]">
+    <section id="sobre" className="reveal reveal-visible grid items-center gap-10 py-6 sm:py-10 lg:grid-cols-[1.1fr_0.9fr]">
       <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
         <div className="relative">
           <img
@@ -12,7 +12,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="space-y-5 order-2 lg:order-1">
-        <span className="reveal reveal-delay-1 inline-flex items-center rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs font-semibold text-[#93c5fd]">
+        <span className="reveal reveal-delay-1 flex w-max mx-auto sm:mx-0 items-center rounded-full border border-[#1e40af] bg-[#1e293b] px-3 py-1 text-xs font-semibold text-[#93c5fd]">
           Desenvolvedora Back-End
         </span>
         <h1 className="reveal reveal-delay-2 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">

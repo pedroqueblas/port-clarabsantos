@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-6 skills-strip">
-          <div className="skills-glass-card reveal reveal-delay-3">
+          <div className="skills-glass-card">
             <div className="skills-marquee">
               <div className="skills-marquee-inner">
                 {skills.map((skill, index) => (
